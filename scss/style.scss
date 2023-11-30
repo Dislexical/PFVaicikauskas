@@ -1,125 +1,63 @@
-$font-family: 'arial', sans-serif;
-$color-white: white;
-$background-color-black: #000;
-$background-color-gray: #333;
-$color-green: rgb(69, 213, 37);
-$font-family-brave: brave, sans-serif;
-$max-width: 1200px;
-
 * {
-  font-family: $font-family;
-  color: $color-white;
+  font-family: "arial", sans-serif;
+  color: white;
   margin: auto;
 }
 
+@import '../scss/base/vars';
+@import '../scss/base/maps';
+@import '../scss/base/extend';
+@import '../scss/componentes/navbar';
+
+.titulo {
+  @extend %titulo;
+}
+
+.toyotaLogo {
+  @extend %toyotaLogo;
+}
+
 .body_black {
-  background-image: linear-gradient(to bottom, rgb(34, 34, 34), $background-color-black);
+  background-image: linear-gradient(to bottom, rgb(34, 34, 34), #000);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.body_gris {
-  background-color: $background-color-gray;
+section div p, .box_nav {
+  font-size: 19px;
+  margin: 30px 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgb(55, 55, 55);
+  padding: 10px 25px;
 }
 
 .actualPag {
-  color: $color-green;
-  font-family: $font-family-brave;
+  color: $verde;
+  font-family: brave, sans-serif;
+}
+
+.body_gris {
+  background-color: #333;
 }
 
 .box_sect_div_p,
 .box_nav {
-  text-align: justify;
-  max-width: $max-width;
-  width: 100%;
-  padding: 45px 0;
-  margin: 0 auto;
-  margin-top: 150;
-
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.titulo {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
-  text-align: center;
-  color: $color-white;
-  max-width: $max-width;
-  margin: auto;
-  padding: 20px;
-}
-
-.subtitulo {
-  font-size: 35px;
-  text-align: center;
+  @extend %texto;
 }
 
 .containerImg,
 .containerImgGallery,
 .containerImgSs {
-  width: 75vw;
-  max-width: 560px;
-  max-height: 320px;
-  margin: auto;
+  @extend %imagen;
+  @extend %imagenFlex;
 }
 
-.cajaImg,
-.cajaImgLeft,
-.cajaImgRight {
-  width: 100%;
-  height: 100%;
-}
-
-section div p {
-  font-size: 19px;
-  margin: 30px 0;
-  position: relative;
-  left: 0;
-  overflow: hidden;
-  background-color: rgb(55, 55, 55);
-  padding: 10px;
-}
-
-.toyotaLogo,
-.imagenLogo {
-  width: 75vw;
-  max-width: 560px;
-  max-height: 320px;
-  margin: auto;
-}
-
-.imagenLogo {
-  background-color: rgb(31, 31, 31);
-  width: 75vw;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  margin-right: 600px;
-  float: none;
-  width: 100px;
-}
-
-header {
-  font-size: 40px;
-  background-color: #2f2f2f;
-  color: $color-white;
-  text-align: center;
-  padding: 1px;
-  border-bottom: 1px solid rgb(255, 255, 255);
-}
-
-.header_img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 nav a {
   font-size: 20px;
-  color: $color-white;
+  color: white;
   text-decoration: none;
 }
 
@@ -142,8 +80,17 @@ nav, a {
 }
 
 .list {
-  background-color: $background-color-gray;
+  background-color: #333;
   padding: 10px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  bottom: 0;
+  width: 100%;
 }
 
 nav, .offcanvas {

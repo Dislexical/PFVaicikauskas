@@ -4,20 +4,21 @@
   margin: auto;
 }
 
-.body_black {
-  background-image: linear-gradient(to bottom, rgb(34, 34, 34), #000);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+.titulo {
+  font-family: '"Times New Roman", Times, serif;';
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
-.body_gris {
-  background-color: #333;
-}
-
-.actualPag {
-  color: rgb(69, 213, 37);
-  font-family: brave, sans-serif;
+.toyotaLogo {
+  width: 75vw;
+  max-width: 560px;
+  max-height: 320px;
+  margin: auto;
 }
 
 .box_sect_div_p,
@@ -33,63 +34,21 @@
   align-content: center;
 }
 
-.titulo {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-  text-align: center;
-  color: white;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-.subtitulo {
-  font-size: 35px;
-  text-align: center;
-}
-
 .containerImg,
 .containerImgGallery,
 .containerImgSs {
   width: 75vw;
   max-width: 560px;
   max-height: 440px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
-.cajaImg,
-.cajaImgLeft,
-.cajaImgRight {
+.containerImg,
+.containerImgGallery,
+.containerImgSs {
   width: 100%;
   height: 100%;
-}
-
-section div p {
-  font-size: 19px;
-  margin: 30px 0;
-  left: 0;
-  overflow: hidden;
-  background-color: rgb(55, 55, 55);
-  padding: 10px 25px;
-}
-
-.toyotaLogo,
-.imagenLogo {
-  width: 75vw;
-  max-width: 560px;
-  max-height: 320px;
-  margin: auto;
-}
-
-.imagenLogo {
-  background-color: rgb(31, 31, 31);
-  width: 75vw;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  margin-right: 600px;
-  float: none;
-  width: 100px;
 }
 
 header {
@@ -98,13 +57,32 @@ header {
   color: white;
   text-align: center;
   padding: 1px;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid #fff;
 }
 
-.header_img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.body_black {
+  background-image: linear-gradient(to bottom, rgb(34, 34, 34), #000);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section div p, .box_nav {
+  font-size: 19px;
+  margin: 30px 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgb(55, 55, 55);
+  padding: 10px 25px;
+}
+
+.actualPag {
+  color: #45D525;
+  font-family: brave, sans-serif;
+}
+
+.body_gris {
+  background-color: #333;
 }
 
 nav a {
